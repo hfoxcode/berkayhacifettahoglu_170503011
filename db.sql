@@ -1,3 +1,5 @@
+create database autoDB;
+
 create table autoeintrag (
 autoid int,
 automarke nvarchar(250),
@@ -10,12 +12,15 @@ autokaufername nvarchar(250),
 autoverkaufzahl int,
 welcheservice int );
 drop table autoeintrag;
-select * from autoeintrag
+select * from autoeintrag;
 create table verwaltungspersonell(
 verwaltungspersonellid int,
 verwaltungspersonellname varchar(250))
 
-select* from verwaltungspersonell
+INSERT INTO autoeintrag (autoid,automarke,automodell,automotorleistung,autopreize,autoverkaufer,autokaufer,autokaufername,autoverkaufzahl,welcheservice)
+VALUES (1,"mercedes","cla180",3,16000,"hfo","bahar","bahar",1,"technische Service");
+
+select* from verwaltungspersonell;
 
 create table verkaufer (
 verkauferid int,
@@ -24,7 +29,7 @@ verkauferautoid int,
 verkaufername varchar(250),
 kimesatti int ) 
 drop table verkaufer;
-select*from verkaufer
+select*from verkaufer;
 create table servicepersonell(
 servicepersonellid int,
 servicepersonellname nvarchar(250),
@@ -34,18 +39,18 @@ serviceautoinhaber int,
 serviceautoverkaufer int,
 servicepreize int)
  drop table servicepersonell;
- select * from servicepersonell
+ select * from servicepersonell;
 
  create table kaufer (
  kauferid int,
  kaufername nvarchar(250),
  kauferauto int,)
 
- select*from kaufer
+ select*from kaufer;
 create table serviceprotokoll(
  protokollid int,
  protokollpersonell int,
  protokollgrund nvarchar(1000),
  protokolldatum date,
  servicepreize int)
-select * from serviceprotokoll
+select * from serviceprotokoll;

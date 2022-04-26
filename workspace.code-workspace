@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\javascriptdevelopment\\javascript-basic-projects-master\\javascript-basic-projects-master\\01-color-flipper\\setup"
+		},
+		{
+			"path": "..\\reactlessons"
+		},
+		{
+			"path": "..\\nodejs_tutorials"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "reactlessons"
+	}
+}
